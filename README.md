@@ -6,7 +6,7 @@ This module provides automatic instrumentation for [`TypeORM`](https://typeorm.i
 ## Installation
 
 ```
-npm install --save opentelemetry-instrumentation-typeorm
+npm install --save @frzzzy/opentelemetry-instrumentation-typeorm
 ```
 
 ## Supported Versions
@@ -49,5 +49,3 @@ TypeORM instrumentation has few options available to choose from. You can set th
 | `enableInternalInstrumentation` | boolean |  Some methods such as `getManyAndCount` can generate internally multiple spans. To instrument those set this to `true`|
 | `collectParameters` | boolean | set to `true` if you want to capture the parameter values for parameterized SQL queries (**may leak sensitive information**)
 ---
-
-This extension (and many others) was developed by [Aspecto](https://www.aspecto.io/) with ❤️
